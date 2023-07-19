@@ -42,5 +42,6 @@ Visit `http://localhost:3000` in your browser to start interacting with the Peng
 
 See the project in action.
 
-[TWebsite](https://penguis.vercel.app/)
-[Screenshot](img/imagen.png)
+[Website](https://penguis.vercel.app/)
+
+[Screenshot](img/image.png)
