@@ -1,65 +1,46 @@
-# ERC721 Drop Claim Page
+# Pengui NFT Collection
 
-In this example, you can create your own ERC721 Drop claim page just by customizing the template with your branding and plugging in your NFT Drop contract address.
+## Project Overview
+The Pengui NFT Collection is a unique series of 5 digital tokens, each embodying a distinct penguin character with its own personality and life philosophy. This project is not just about owning a piece of digital art, but about being part of a vibrant and growing community of Pengui enthusiasts and NFT collectors.
 
-This template works with the NFT Drop / Signature Drop contract from thirdweb or when using any of the Drop contract bases or if you implement these extensions:
+## Technologies and Tools Used
+- **Smart Contract Development:** Thirdweb, Solidity
+- **Blockchain Network:** Conflux eSpace Testnet
+- **NFT Standards:** ERC-721
+- **Frontend Development:** React, Web3.js, Thirdweb
+- **Design:** Adobe Illustrator, Photoshop, Dall-e 2
+- **Deployment:** IPFS, Vercel
 
-- [ERC721ClaimConditions](https://portal.thirdweb.com/solidity/extensions/erc721claimconditions)
-- [ERC721ClaimPhases](https://portal.thirdweb.com/solidity/extensions/erc721claimphases)
+## Setup, Compilation, and Deployment
 
-## Using This Repo
+### Prerequisites
+- Node.js and npm must be installed. 
 
-To create your own version of this template, you can use the following steps:
+### Setup
+1. Clone this repository.
+    ```
+    git clone https://github.com/PenguiNFT/Penguis.git
+    ```
+2. Navigate into the project directory and install the dependencies.
+    ```
+    cd penguis
+    npm install
+    ```
 
-Run this command from the terminal to clone this project:
+### Compilation and Deployment
+The project uses Thirdweb for smart contract development and deployment. Please follow the [Thirdweb documentation](https://docs.thirdweb.com/getting-started/overview) for compiling and deploying the smart contracts to the Conflux eSpace Testnet.
 
-```bash
-npx thirdweb create --template erc721
-```
+### Running the App
+Start the React app.
+ ```
+npm start
+ ```
 
-### 1. Deploy An NFT Drop on thirdweb
+Visit `http://localhost:3000` in your browser to start interacting with the Pengui NFTs.
 
-If you haven't already deployed your contract, head over to the thirdweb dashboard and create your own NFT Drop contract.
+## Demo
 
-You can learn how to do that with our guide [Release an NFT drop on your own site without writing any code](https://portal.thirdweb.com/guides/release-an-nft-drop-with-no-code#create-a-drop-contract).
+See the project in action.
 
-Be sure to configure a **name**, **description**, and **image** for your NFT drop in the dashboard.
-
-### 2. Configure Parameters
-
-Go to the [`parameters.ts`](/src/consts/parameters.ts) and update the following values:
-
-1. `contractConst`: The smart contract address of your NFT drop.
-2. `chainConst`: The name of the chain that your smart contract is deployed to.
-
-### 3. Customize the Styling
-
-You can change the theme and primary color of the page by updating `primaryColorConst` and `themeConst` in [`parameters.ts`](/src/consts/parameters.ts).
-
-If you want to go further, you can also update the styles in the respective components by changing the [Tailwind](https://tailwindcss.com/) classes.
-
-### 4. Optional: Add Gasless Transaction Support
-
-If you want to sponsor the gas fees for your user, you can update the `relayerUrlConst` in [`parameters.ts`](/src/consts/parameters.ts) to point to your Open Zeppelin relayer or `biconomyApiKeyConst` and `biconomyApiIdConst` to use Biconomy.
-
-Learn more: https://portal.thirdweb.com/glossary/gasless-transactions
-
-## Deploying Your Site
-
-### Deploying to IPFS
-
-To deploy your site to IPFS, run the following command:
-
-```bash
-yarn deploy
-```
-
-This will deploy your site and output the IPFS hash of your site. You can then grab the IPFS hash and replace it with the one you get on the Embed tab on your contract on dashboard, so you get the updated version on your website once you copy it over.
-
-### Deploying to a centralized server
-
-You can also deploy it to any centralized server like any normal website.
-
-## Join our Discord!
-
-For any questions or suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+[TWebsite](https://penguis.vercel.app/)
+[Screenshot](img/imagen.png)
